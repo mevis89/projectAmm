@@ -1,0 +1,8 @@
+body { color:black;	font-family: "Open Sans" , Arial , sans-serif; font-size:14px;}
+#header,#footer {color: White;}
+#logo{background-color:#1c345a;}
+.urrent_page_item {font-weight:bold;}
+div#content>h2 {color:#9e1616;}
+h1 h2 h3 h4 h5 h6{color: #1c345a;}
+a:link,a:visited{color:#9e1616; text-decoration:underline; font-weight:bold;}
+a:link,a:visited href{color:#1c345a;}
