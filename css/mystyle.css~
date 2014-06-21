@@ -1,0 +1,38 @@
+body	
+  {
+	background: white;	  	
+    font-family: sans-­‐serif;
+  }	  
+h1	
+  {	  	
+  	color: #dd4b39;
+	border-bottom:1px solid #dd4b39;
+	text-align: center;
+  }	
+
+h2
+  {
+	text-align: center;
+  }
+ 
+.input
+{
+    line-height: 10px;
+    border-bottom: 1px solid #1c345a;
+}
+
+.input input[type=text], .input input[type=password]
+{    
+	display: inline-block;
+    width:10%;
+}
+
+.input input[type=submit]
+{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
