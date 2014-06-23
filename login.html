@@ -1,40 +1,99 @@
-    <!DOCTYPE html>
-    <!-- 
-         
-    -->
+<!DOCTYPE html>	 
+<html>
+	<head>	
+		<meta http-equiv="Content-­‐Type" content="text/html; charset=UTF-­‐8">	
+		<title></title>	
+	</head>	
+	<body>	
+	<?php	
+		if (isset($_SESSION["loggedIn"]) &&	$_SESSION["loggedIn"])	
+  			{
+				?>	
+		<!-­‐-­‐ Mostriamo il messaggio di benvenuto -­‐-­‐>	
+		<h1>Benvenuto</h1>	
+		<p>Benvenuto,sei stato correttamente autenticato</p>	
+ 		<form action="simpleLogin.php" method="post">	
+		<input type="submit" name="logout" value="Logout"/>	
+		</form>	
+	<?php	
+ 	}	
+  	else	
+  	{	
+	?>	
+ 	<h1>Benvenuto</h1>	
+ 	<p>Inserire	le proprie credenziali</p>	
+	<form action="simpleLogin.php" method="post">	
+	<label for="user">User</label>	
+	<input type="text" name="user" id="user"/><br/>	
+	<label for="password">Password</label>	
+	<input type="password" name="password" id="password"/><br/>	
+	<input type="submit" name="login" value="Login"/>	
+	</form>	
+	<?php	
+	}	
+ 	?>	
+	</body>	 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
     <html>
 		<head>
-			<title>Login</title> <!-- Nome della pagina -->
-			<meta http-equip="Content-Type" content="text/html; charset=utf-8" > <!-- Contiene le informazioni della pagina -->
- 			<style type="text/css"></style> <!-- indica lo stile in css -->
- 			<link rel="stylesheet" type="text/css" href="css/mystyle.css"> <!-- indica dove trovare i css -->
- 			<script type="text/javascript"></script>
+			<title>Login</title> <!-- Nome della pagina 
+			<meta http-equip="Content-Type" content="text/html; charset=utf-8" > <!-- Contiene le informazioni della pagina 
+ 			<style type="text/css"></style> <!-- indica lo stile in css 
+ 			<link rel="stylesheet" type="text/css" href="css/mystyle.css"> <!-- indica dove trovare i css 		
+			<script type="text/javascript"></script>
  			
 		</head>
 		<body>
-			<header>
+			<?php
+				if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"])	
+			  		{?>	
+			<header> 
 				<h1>Login</h1>
+				
+					In questi input verranno posti username e password per effettuare il login all'interno del sito 
+				
+				<div class="input">
+				<form action="prova.php" method="post">
+	 			<label for="corto">Username</label>
+				<input type="text" name="user" id="user" value="user"/>
+				</br>
+	 			<label for="corto">Password</label>
+				<input type="password" name="psw" id="psw" value="psw"/>
+				<input type="submit" name="login" value="login" />
+				</form>
+				</div>			
 			</header>
-			<!--
-				In questi input verranno posti username e password per effettuare il login all'interno del sito 
-			-->
-			
-			<div class="input">
-        	<form action="demo_form.asp" method="get">
- 			<label for="corto">Username</label>
-			<input type="text" name="corto" id="user" value="username"/>
-			</br>
-			<form action="demo_form.asp" method="get">
- 			<label for="corto">Password</label>
-			<input type="password" name="psw" id="psw" value="password"/>
-			<!--
-				invio
-			-->
-			<input type="submit" value="Invia" />
-			</div>			
-
         </body>
     </html>
-    
+-->  
 
 

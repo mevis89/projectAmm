@@ -1,30 +1,30 @@
+/* Elementi utili */
+/*border-bottom:1px solid #dd4b39;		Riga separatoria*/
+
 body	
   {
 	background: white;	  	
-    font-family: sans-­‐serif;
+    font-family: sans-serif;
   }	  
+
 h1	
   {	  	
   	color: #dd4b39;
-	border-bottom:1px solid #dd4b39;
+	
 	text-align: center;
   }	
-
-h2
-  {
-	text-align: center;
-  }
- 
+	
 .input
 {
-    line-height: 10em;
-    border-bottom: 1px solid #1c345a;
+	text-align:center;
+    line-height: 2em;
+    
 }
 
 .input input[type=text], .input input[type=password]
 {    
 	display: inline-block;
-    width:10%;
+    width:5%;
 }
 
 .input input[type=submit]
