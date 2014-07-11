@@ -1,0 +1,401 @@
+body
+{
+    background-color: #e4e4e4;
+    font: 13px/20px "Open Sans", Arial, sans-serif;
+}
+
+#pagina
+{
+    background-color: white;
+}
+
+#header 
+{
+	position:relative;
+    background-color:#ADFF2F;
+    color: white;
+	margin-top:-12px;;
+}
+
+#footer 
+{
+    color: white;
+}
+
+#menu ul li a:link
+{
+    color: white;
+}
+
+h2, h3, h4, h5, h6 
+{
+    color: #1c345a;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.validator
+{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/** vista dei link **/
+a:link
+{
+    text-decoration: underline;
+    color: #9e1616;
+}
+
+a:visited
+{
+    text-decoration: underline;
+    color: #9e1616;
+}
+
+a:hover
+{
+    font-weight: bold;
+}
+
+input
+{
+    border: 1px solid #ADFF2F;
+}
+
+input[type=submit], button
+{
+    color: #ffffff;
+    background-color: #ADFF2F;
+    height: 2em;
+    font-weight: bold;
+    border-radius: 1em;
+    border: 1px solid #ADFF2F;
+    min-width: 100px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+
+}
+
+input[type=submit]:hover, button:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+label.full
+{
+    display: inline-block;
+    width: 70%;
+}
+
+label
+{
+    display: inline-block;
+    width: 30%;
+}
+
+.input-form
+{
+    line-height: 3em;
+    border-bottom: 1px solid #1c345a;
+}
+
+
+.input-form input[type=text], .input-form input[type=password]
+{
+    display: inline-block;
+    width:59%;
+}
+
+.input-form select
+{
+    display: inline-block;
+    width:59%;
+    border: 1px solid #1c345a;
+    background-color: #ffffff;
+}
+
+.input-form input[type=submit], .input-form button
+{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.btn-group input[type=submit], .btn-group button
+{
+    display: inline-block;
+}
+.btn-group
+{
+    text-align: center;
+}
+
+/* stile delle tabelle */
+
+table 
+{
+    border: 1px solid #1c345a;
+    border-collapse: collapse;
+    margin-top:10px;
+    line-height: 1.2em;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+th, td 
+{
+    border: 1px solid #1c345a;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th
+{
+    background-color: #1c345a;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+tr, td
+{
+    background-color: #e8ebee;
+}
+
+tr.alt-row, tr.alt-row td
+{
+    background-color: #bbc2ce;
+}
+
+/* decorazioni degli elementi */
+
+#sidebar1 li 
+{
+    list-style: none;
+}
+
+#sidebar2 ol  
+{
+    padding-left: 20px;
+}
+
+
+
+#sidebar1 ul, #sidebar2 ul
+{
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+
+.icon-title
+{
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    padding-top: 3px;
+    margin-top: 15px;
+}
+
+.panel, .panel-mini
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.panel li a:link, .panel-mini li a:link
+{
+    text-decoration:  none;
+    color: #9e1616;
+}
+
+
+.none
+{
+    list-style: none;
+}
+.no-space
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.clear
+{
+    clear: both; 
+    width: 0px; 
+    height: 0px;
+}
+
+#pagina
+{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom:25px;
+}
+
+#sidebar1 
+{
+	float: left;
+	width: 19%;
+	padding-left: 1%;
+}
+
+#sidebar2 
+{
+	float: right;
+	width: 19%;
+	padding-right: 1%;
+}
+
+#content 
+{
+    margin-left: 21%;
+    margin-right: 21%;
+    padding-bottom: 20px;
+	padding-left: 20px;
+	min-height: 300px;
+}
+
+
+
+/* social bar */
+
+.social
+{
+	width: 100%;
+}
+
+.social ul
+{
+	display: block;
+	float: right;
+	margin-right: 10px;
+}
+
+.social ul li
+{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+}
+
+    .social ul li a:link{
+	color: transparent;
+    }
+
+    #facebook{
+	background-image: url('../images/fb.png');
+	background-repeat: no-repeat;
+    }
+
+    #twitter{
+	background-image: url('../images/twitter.png');
+	background-repeat: no-repeat;
+    }
+
+    #linkedin{
+	background-image: url('../images/linkedin.png');
+	background-repeat: no-repeat;
+	}
+
+/* header */
+
+select.menu 
+{
+	display: none;
+}
+
+#header
+{
+	clear: both;
+}
+
+#header
+{
+	height: 100px;
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 860px;
+	border-left:2%;
+}
+
+#footer
+{
+	height: 120px;
+	position: relative;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 860px;
+}
+
+#menu
+{
+	position: relative;
+	float: right;
+	display: inline-block;
+}
+
+#menu ul
+{
+	position: relative;
+	display: inline-block;
+	list-style: none;
+}
+
+#menu ul li
+{
+	position: relative;
+	display: inline-block;
+    color: white;
+	left:9em;
+	top:3em;
+}
+
+#menu a:link, #menu a:visited
+{
+	color: #6A5ACD;
+}
+
+#intestazione
+{
+	position:absolute;
+}
+
+.panel li
+{
+	display: block;
+	width: 400px;
+	height: 130px;
+	margin:auto;
+	margin-top: 15px;
+	border: 1px solid #1c345a;
+	position: relative;
+}
+
+.panel li a
+{
+	display: block;
+	position: absolute;
+	/* per allineare il testo a meta' di un block il trucco e' usare
+	 una line-height della stessa altezza del blocco */
+	line-height: 130px;
+	vertical-align: middle;
+	padding-left: 150px;
+	font-size: 1.2em;
+}
+}

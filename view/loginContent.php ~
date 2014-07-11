@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<div class="input">
+				<form action="prova.php" method="post">
+	 			<label for="corto">Username</label>
+				<input type="text" name="user" id="user" value="user"/>
+				</br>
+	 			<label for="corto">Password</label>
+				<input type="password" name="psw" id="psw" value="psw"/>
+				<input type="submit" name="login" value="login" />
+				</form>
+				</div>

@@ -1,0 +1,17 @@
+<div id="sidebar2">
+	<h2 id="help" class="icon-title">Istruzioni</h2>
+	<p>
+                    
+	</p>
+ 	<ol>
+	<li>
+		<form name=”cerca” action=”onClick” method=”POST”>
+			<a href="index.php?page=utente&com=cerca">cerca libro</a>
+			<a href="index.php?page=utente&com=carrello">Carrello della spesa</a>
+		</form>
+	</li>
+	<li>
+		Guarda Carrello
+	</li>
+	</ol>
+</div>

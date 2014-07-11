@@ -1,0 +1,5 @@
+<form name=”logout” action=”” method=”POST”>
+<!--<input name="submit" type="button" method="POST"></input>-->
+	<a href=''>Logout</a>
+
+</form>

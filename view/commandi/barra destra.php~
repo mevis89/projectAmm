@@ -1,0 +1,28 @@
+<div id="sidebar2">
+	<h2 id="help" class="icon-title">Istruzioni</h2>
+	<p>             
+	</p>
+	<ol>
+		<li>
+			<form name=”cerca” action=”onClick” method=”POST”>
+				<?php 
+					if (($_SESSION['stato']=='cerca')||($_SESSION['stato']=='cerca avanzata'))
+					{?>
+					<a href="">cerca libro</a>
+				<? }else 
+				{?>
+					<a href="index.php?page=utente&com=cerca">cerca libro</a>
+				<?}?>
+		</li>
+		<li>
+				<? 
+					if ($_SESSION['stato']=='carrello') {?>
+					<a href="">Guarda Carrello</a>
+				<? }else 
+				{?>
+				<a href="index.php?page=utente&com=carrello">Guarda Carrello</a>
+				<?}?>
+		</li>
+			</form>
+	</ol>
+</div>
