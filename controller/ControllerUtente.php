@@ -21,8 +21,6 @@
 			$mod = new Model();
 			$vs = new Vision();
 			
-			
-			
 			if(isset($request['com']))
 			switch ($request['com'])
 			{			
@@ -32,15 +30,26 @@
 				case 'logout': 
 					$mod->getlogout();
 					break;
+
+				// Set Ricerche
 				case 'cerca':
 					$vs->setCerca();
 					break;
+				case 'ricercaSemplice':
+					$vs->setRicercaSemplice();
+					break;
+				case 'ricercaAvanzata':
+					$vs->setRicercaAvanzata();
+					break;
 				case 'cercaAvanzata':
 					$vs->setCercaAvanzata();
-					break;
+
+				// Set Carrello
 				case 'carrello':
 					$vs->setCarrello();
 					break;
+				
+				
 			}
 				
 			

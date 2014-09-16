@@ -4,13 +4,12 @@
     	Ricerca semplice
     </p>
     <p>     
-		
-		<form action="" method="POST">
+		<form method='POST' action="index.php?page=<?php echo $_SESSION['username'];?>&com=ricercaSemplice&titolo">
   		<p>
-   			<label>Cerca per Titolo</label>
+   			<label>Cerca per Autore</label>
    			<input id="cerca" name="titolo" type="text" required="required" />
 			</br>
-			<a href="index.php?page=utente&com=cercaAvanzata">Ricerca avanzata</a>
+			<a href="index.php?page=<?php echo $_SESSION['username'];?>&com=cercaAvanzata">Ricerca avanzata</a>
   		</p>
 	</p>
 		

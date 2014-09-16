@@ -38,27 +38,7 @@
 			$barraDestra ="view/commandi/barra destra.php";	
 			$_SESSION['pagina']='carrello';			
    			include ("view/Master.php");
-		}
-
-		public function setCerca()
-		{
-			$logout = "view/login/logoutContent.php";
-			$content = "view/commandi/cerca.php";
-			$barraSinistra ="view/commandi/barra sinistra.php";
-			$barraDestra ="view/commandi/barra destra.php";	
-			$_SESSION['pagina']='cerca';			
-   			include ("view/Master.php");
-		}
-
-		public function setCercaAvanzata()
-		{
-			$logout = "view/login/logoutContent.php";
-			$content = "view/commandi/cercaAvanzata.php";
-			$barraSinistra ="view/commandi/barra sinistra.php";
-			$barraDestra ="view/commandi/barra destra.php";	
-			$_SESSION['pagina']='cerca avanzata';			
-   			include ("view/Master.php");
-		}
+		}	
 
 		public function setLoginError()
 		{
@@ -75,18 +55,132 @@
 			$content = "view/login/logoutContent.php";
 			$barraSinistra ="view/altri/noBarra.php";
 			$barraDestra ="view/altri/noBarra.php";
+			$carrello ="view/altri/carrello.php";
 			$_Session['pagina']="logout";
 			include ("view/Master.php");
 		}
 		
 		public function setLogin()
 		{
-			//echo ' setLogin /';
 			$logout = "view/altri/noContent.php";
 			$content = "view/login/loginContent.php";
 			$barraSinistra ="view/altri/barra sinistra.php";
-			$barraDestra ="view/altri/barra destra.php";	
+			$barraDestra ="view/altri/barra destra.php";
 			$_SESSION['pagina']='login';
+			include ("view/Master.php");
+		}
+		
+		// Ricerca Semplice
+		public function setCerca()
+		{
+			$logout = "view/login/logoutContent.php";
+			$content = "view/commandi/cerca.php";
+			if ($_SESSION['username']=='utente')
+				{				
+					$barraSinistra ="view/utente/barra sinistra.php";
+					$barraDestra ="view/utente/barra destra.php";	
+				}
+			else if ($_SESSION['username']=='amm')
+				{				
+					$barraSinistra ="view/amm/barra sinistra.php";
+					$barraDestra ="view/amm/barra destra.php";	
+				}	
+			$_SESSION['pagina']='cerca';			
+   			include ("view/Master.php");
+		}
+		public function setRicercaSemplice()
+		{
+			$logout = "view/altri/noContent.php";
+			$content = "view/risultato.php";
+			if ($_SESSION['username']=='utente')
+				{				
+					$barraSinistra ="view/utente/barra sinistra.php";
+					$barraDestra ="view/utente/barra destra.php";	
+				}
+			else if ($_SESSION['username']=='amm')
+				{				
+					$barraSinistra ="view/amm/barra sinistra.php";
+					$barraDestra ="view/amm/barra destra.php";	
+				}	
+			$_SESSION['pagina']='ricercaSemplice';
+			include ("view/Master.php");
+		}
+
+		// Ricerca Avanzata
+		public function setRicercaAvanzata()
+		{
+			$logout = "view/login/logoutContent.php";
+			$content = "view/risultatoAvanzata.php";
+			if ($_SESSION['username']=='utente')
+				{				
+					$barraSinistra ="view/utente/barra sinistra.php";
+					$barraDestra ="view/utente/barra destra.php";	
+				}
+			else if ($_SESSION['username']=='amm')
+				{				
+					$barraSinistra ="view/amm/barra sinistra.php";
+					$barraDestra ="view/amm/barra destra.php";	
+				}
+			$_SESSION['pagina']='cerca avanzata';			
+   			include ("view/Master.php");
+		}
+		public function setCercaAvanzata()
+		{
+			$logout = "view/altri/noContent.php";
+			$content = "view/commandi/cercaAvanzata.php";
+			if ($_SESSION['username']=='utente')
+				{				
+					$barraSinistra ="view/utente/barra sinistra.php";
+					$barraDestra ="view/utente/barra destra.php";	
+				}
+			else if ($_SESSION['username']=='amm')
+				{				
+					$barraSinistra ="view/amm/barra sinistra.php";
+					$barraDestra ="view/amm/barra destra.php";	
+				}	
+			$_SESSION['pagina']='ricercaAvanzata';
+			include ("view/Master.php");
+		}		
+		
+		// Set per inserire libri nel database
+		public function setInserisci()
+		{
+			// prova database;
+			$logout = "view/altri/noContent.php";
+			$content = "view/commandi/inserisci.php";
+			$barraSinistra ="view/amm/barra sinistra.php";
+			$barraDestra ="view/amm/barra destra.php";	
+			$_SESSION['pagina']='inserisci';
+			include ("view/Master.php");
+		}
+		
+		public function setInserisciDati()
+		{
+			// prova database;
+			$logout = "view/altri/noContent.php";
+			$content = "view/risultatoDataBase.php";
+			$barraSinistra ="view/amm/barra sinistra.php";
+			$barraDestra ="view/amm/barra destra.php";	
+			$_SESSION['pagina']='inserisci';
+			include ("view/Master.php");
+		}
+		
+		//prova
+		public function setLista()
+		{
+			$logout = "view/login/logoutContent.php";
+			$content = "view/lista.php";
+			if ($_SESSION['username']=='utente')
+				{				
+					$barraSinistra ="view/utente/barra sinistra.php";
+					$barraDestra ="view/utente/barra destra.php";	
+				}
+			else if ($_SESSION['username']=='amm')
+				{				
+					$barraSinistra ="view/amm/barra sinistra.php";
+					$barraDestra ="view/amm/barra destra.php";	
+				}
+			$_SESSION['pagina']='ricercaSemplice';
 			include ("view/Master.php");
 		}
 		

@@ -29,7 +29,7 @@
                     </select>
                    <div id="menu">
                         <ul>
-                            <li class="current_pagina_item"><a href="#">Home</a></li>
+                            <li class="current_pagina_item"><a href="index.php?page=login">Home</a></li>
                             <li><?php require($logout); ?></li>
                         </ul>
                     </div> 
@@ -45,9 +45,11 @@
 				require($barraDestra);
 			?>
             <!-- Content -->
+			<content>
 			<?php
 				require($content);
 			?>
+			</content>
 
             <!--  footer -->
             <footer>

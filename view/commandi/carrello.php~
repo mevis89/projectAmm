@@ -2,8 +2,18 @@
 	<h2 class="icon-title" id="h-home">Home</h2>
     <p>
     	Il Tuo carrello
+
+		<?php
+
+			$array[$_S] = $_SESSION['inserisci'];			
+
+			echo $array[1];		
+
+		?>
     </p>
+
     <p>     
+
 	</p>
 		
 </div>

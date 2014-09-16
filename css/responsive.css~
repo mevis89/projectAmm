@@ -99,7 +99,7 @@ label
 .input-form
 {
     line-height: 3em;
-    border-bottom: 1px solid #1c345a;
+    border-bottom: 1px solid #ADFF2F;
 }
 
 
@@ -113,7 +113,7 @@ label
 {
     display: inline-block;
     width:59%;
-    border: 1px solid #1c345a;
+    border: 1px solid #ADFF2F;
     background-color: #ffffff;
 }
 
@@ -251,22 +251,24 @@ tr.alt-row, tr.alt-row td
 	float: left;
 	width: 19%;
 	padding-left: 1%;
+
 }
 
 #sidebar2 
 {
 	float: right;
 	width: 19%;
-	padding-right: 1%;
+	padding-right: 1%;	
 }
 
 #content 
 {
-    margin-left: 21%;
-    margin-right: 21%;
-    padding-bottom: 20px;
-	padding-left: 20px;
-	min-height: 300px;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom:25px;
+	background-color:red;
 }
 
 

@@ -21,13 +21,14 @@
 					$_SESSION['password']=$_REQUEST['password'];
 					header("Location: index.php?page=utente&com=utente");
    				}
+				else
 				if($_REQUEST['username']=='amm' && $_REQUEST['password']=='psw') //controllo utente
 				{
 					//echo " entra come amm ";
 					$_SESSION['stato']="amm";
 					$_SESSION['username']=$_REQUEST['username'];
 					$_SESSION['password']=$_REQUEST['password'];
-					header("Location: index.php?page=amm");
+					header("Location: index.php?page=amm&com=amm");
    				}
   			}
 		}
@@ -38,6 +39,8 @@
         	session_destroy();
 			header("Location: index.php?page=login");
 		}	
+
+		
 		
 	}
 ?>

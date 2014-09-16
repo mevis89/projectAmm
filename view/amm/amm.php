@@ -1,11 +1,9 @@
 <div id="content">
 	<h2 class="icon-title" id="h-home">Home</h2>
     <p>
-    	Benvenuto effettuare il login prima di fare un acquisto
+    	Benvenuto <?php echo $_SESSION["username"];?>
     </p>
     <p>     
-		
-		Salve <?php echo $_SESSION["username"];?>
 
 	</p>
 		

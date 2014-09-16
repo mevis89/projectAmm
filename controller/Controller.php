@@ -28,9 +28,9 @@
 					if(isset($_SESSION['username']))
 						{
 							if($_SESSION['username']=='utente')
-								header("Location: index.php?page=utente&com=utente");
+									header("Location: index.php?page=utente&com=utente");						
 							else if($_SESSION['username']=='amm')
-								header("Location: index.php?page=utente&com=utente");
+								header("Location: index.php?page=amm&com=amm");
 							else 
 							{
 							//echo ' secondo login /';

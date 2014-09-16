@@ -27,7 +27,7 @@
 					$_SESSION['stato']="amm";
 					$_SESSION['username']=$_REQUEST['username'];
 					$_SESSION['password']=$_REQUEST['password'];
-					header("Location: index.php?page=amm");
+					header("Location: index.php?page=amm&com=amm");
    				}
   			}
 		}
@@ -38,6 +38,8 @@
         	session_destroy();
 			header("Location: index.php?page=login");
 		}	
+
+		
 		
 	}
 ?>

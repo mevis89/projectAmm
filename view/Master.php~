@@ -16,9 +16,8 @@
 				<!--- social --->
 				<div class="social">
                     <ul>
-                        <li id="facebook"><a href="www.facebook.com">facebook</a></li>
+                        <li id="facebook"><a href="https://facebook.com/">facebook</a></li>
                         <li id="twitter"><a href="https://twitter.com/">twitter</a></li>
-                        <li id="linkedin"><a href="http://www.linkedin.com/">linkedin</a></li>
                     </ul>
                 </div>
 					<div id="intestazione">                   
@@ -30,7 +29,7 @@
                     </select>
                    <div id="menu">
                         <ul>
-                            <li class="current_pagina_item"><a href="#">Home</a></li>
+                            <li class="current_pagina_item"><a href="index.php?page=login">Home</a></li>
                             <li><?php require($logout); ?></li>
                         </ul>
                     </div> 
