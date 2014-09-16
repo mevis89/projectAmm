@@ -1,0 +1,7 @@
+<?php
+//configurazione db
+$DB_host     = 'localhost';
+$DB_user     = 'roccoDaniele';
+$DB_password = 'balena565';
+$DB_name     = 'amm14_roccoDaniele';
+?>

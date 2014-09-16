@@ -1,0 +1,7 @@
+<?php
+	echo 'Ricerca semplice</br>';
+	//inserimento all'interno del carrello
+	include('model/carrello.php');
+	
+
+?>

@@ -1,0 +1,23 @@
+<?php
+	// richiamo il file di configurazione
+	require 'config.php';
+
+	// richiamo lo script responsabile della connessione a MySQL
+	require 'connect.php';
+
+	// preparo la query
+	$query = "select titolo from libri where titolo= $titolo;";
+
+	// lancio la query
+	$result = mysql_query($query);
+
+	// controllo l'esito
+	if (!$result) {
+		die("Errore nella query $query: " . mysql_error());
+	}
+
+	// chiudo la connessione a MySQL
+	mysql_close();
+
+	echo 'Query eseguita correttamente';
+?>

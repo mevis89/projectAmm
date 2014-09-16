@@ -1,0 +1,15 @@
+<html>
+	<script type="text/javascript">
+	<!--
+		function PopupCentrata()
+			{
+			  var w = 400;
+			  var h = 250;
+			  var l = Math.floor((screen.width-w)/2);
+			  var t = Math.floor((screen.height-h)/2);
+			   
+			  window.open("mioFile.htm","","width=" + w + ",height=" + h + ",top=" + t + ",left=" + l);
+			}
+	//-->
+	</script>
+</html>

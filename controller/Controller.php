@@ -27,6 +27,7 @@
 				case 'login':
 					if(isset($_SESSION['username']))
 						{
+							//Se l'username = utente entro nel sito come un utente altrimenti se =amm entrerò come amministratore
 							if($_SESSION['username']=='utente')
 									header("Location: index.php?page=utente&com=utente");						
 							else if($_SESSION['username']=='amm')

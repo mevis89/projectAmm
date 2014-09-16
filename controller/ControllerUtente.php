@@ -20,7 +20,8 @@
  		{	
 			$mod = new Model();
 			$vs = new Vision();
-			
+			//qui avviene il controllo su le ricchieste dell'utente/amm
+			//vien caricato il contenuto della parte richiesta dell'utente/amm tramite il file vision nel modulo
 			if(isset($request['com']))
 			switch ($request['com'])
 			{			
@@ -47,6 +48,14 @@
 				// Set Carrello
 				case 'carrello':
 					$vs->setCarrello();
+					break;
+				
+				case 'insertCarrello':
+					$vs->setInsertCarrello();
+					break;
+		
+				case 'acquisto':
+					$vs->setAcquisto();
 					break;
 				
 				

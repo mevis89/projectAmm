@@ -44,6 +44,7 @@
 					break;
 				case 'inserisciDati':
 					$vs->setInserisciDati();
+				// prova
 				case 'lista':
 					$vs->setLista();
 				

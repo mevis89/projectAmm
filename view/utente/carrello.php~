@@ -1,0 +1,78 @@
+
+<form action="index.php?page=utente&com=carrello" method="POST">
+	<p>
+		<button type="submit" class="green big" name="submit">
+			<span>inserisci</span>
+			<?php
+			
+				include('model/ricercaSemplice.php');
+								
+			?> 
+		<script type="text/javascript">
+            $(document).ready(function(){
+               $("#next-news").click(function(){
+                    $.ajax({
+                        url: "index.php",
+                        data:{
+                          cmd: "next",
+                          id: $("#id-news").attr("value")
+                        },
+                        dataType: 'json',
+                        success : function(data, state){
+                            changeNews(data);
+                        },
+                        error : function(data, state){
+                            
+                        }
+                    })
+               });
+               
+               $("#prev-news").click(function(){
+                    $.ajax({
+                        url: "index.php",
+                        data:{
+                          cmd: "prev",
+                          id: $("#id-news").attr("value")
+                        },
+                        dataType: 'json',
+                        success : function(data, state){
+                            changeNews(data);
+                        },
+                        error : function(data, state){
+                            
+                        }
+                    })
+               });
+               
+               
+               function changeNews(news){
+                   $("#hd-news").text(news.heading);
+                   $("#img-news").attr("src", news.image);
+                   $("#id-news").attr("value", news.id);
+                   $("#txt-news").text(news.text);
+               }
+            });
+</script>
+		</button> 
+<div id="content">
+                <h2 class="icon-title" id="hd-news">Letta: "L'Europa non sia una gabbia ma un aiuto per la crescita"</h2>
+                <p>
+                    <input type ="hidden" value="0" name="id-news" id ="id-news"/>
+                    <img id="img-news" class="news-img" src="http://www.repubblica.it/images/2013/05/21/102623051-b95046ad-9378-417e-85be-795333c9aff6.jpg" alt="News image"/>
+                    <span id="txt-news">"L'Europa non deve tradursi in una gabbia di vincoli 
+                   regole e procedure che finiscono spesso per limitare l'azione 
+                   di tutti, cittadini, famiglie e imprese". 
+                   E soprattutto: non basta l'unione monetaria, 
+                   ma servono "gli Stati Uniti d'Europa". 
+                   Ne è convinto il premier Enrico Letta, intervenuto questa mattina 
+                   nell'Aula del Senato in occasione delle comunicazioni sul vertice 
+                   straordinario dell'Ue in programma per domani, ricordando 
+                   come il decreto approvato all'ultimo Cdm vada in questa direzione.</span>
+                </p>
+                <div class="btn-group">
+                    <button id="prev-news">Indietro</button>
+                    <button id="next-news">Avanti</button>
+                    
+                </div>
+	</p>
+</form>  

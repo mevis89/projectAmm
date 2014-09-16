@@ -13,13 +13,7 @@
             <header>				
                 <!--  header -->
                 <div id="header">
-				<!--- social --->
-				<div class="social">
-                    <ul>
-                        <li id="facebook"><a href="https://facebook.com/">facebook</a></li>
-                        <li id="twitter"><a href="https://twitter.com/">twitter</a></li>
-                    </ul>
-                </div>
+				
 					<div id="intestazione">                   
                     	<h1>Portale Del Libro</h1>
 						
@@ -29,7 +23,7 @@
                     </select>
                    <div id="menu">
                         <ul>
-                            <li class="current_pagina_item"><a href="index.php?page=login">Home</a></li>
+                            <li><a href="index.php?page=login">Home</a></li>
                             <li><?php require($logout); ?></li>
                         </ul>
                     </div> 

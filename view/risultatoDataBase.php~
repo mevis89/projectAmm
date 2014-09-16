@@ -1,0 +1,6 @@
+<?php
+	echo 'Ricerca semplice</br>';
+	
+	include('model/inserisci.php');
+
+?>

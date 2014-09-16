@@ -1,19 +1,52 @@
+<HTML>
+	<head>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+	<script>
+		function MostraMessaggioAcquisto(){
+     	// Effettuo la chiamata Ajax
+     	$.ajax({type: "GET",dataType: "html",url: "index.php?page=utente&com=carrello",,
+			success: 
+				$("button").click(function(){
+					window.alert("Hai effettuato l'acquisto , ora il carrello verrà svuotato");   
+				}
+          	}
+          	error: window.alert("l'acquisto è andato male");   
+          }
+     	});
+		}
+		</script>
+	</head>
 <div id="content">
 	<h2 class="icon-title" id="h-home">Home</h2>
     <p>
+
+		<!---- Piccolo Script in javascript per confermare l'acquisto ---->
     	Il Tuo carrello
 
 		<?php
+			//controllo libri
+			include('model/controlloLibri.php');
+			//Richiamo la pagina in cui verrà mostrato il contenuto del carrello
+			include('model/listaCarrello.php');
+			
+		
+		// Controllo sul carrello
+		if(isset($_SESSION['carrello']))
+		{
+			if ($_SESSION['carrello']=='pieno')
+				{?>
+					Acquistare?
+					<form method="POST" action="index.php?page=utente&com=acquisto"> 
+						<button> prova </button> <!---<input type="Submit">onClick="window.alert('Acquisto effettuato')">--->
+					</form>
 
-			$array[$_S] = $_SESSION['inserisci'];			
-
-			echo $array[1];		
-
-		?>
-    </p>
-
+					
+				<?}
+		}?>
+	
     <p>     
 
 	</p>
 		
 </div>
+</HTML>

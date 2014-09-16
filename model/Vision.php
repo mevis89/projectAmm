@@ -30,10 +30,21 @@
 			include ("view/Master.php");
 		}
 		
+		//carrello ed insert carrello
 		public function setCarrello()
 		{
 			$logout = "view/login/logoutContent.php";
 			$content = "view/commandi/carrello.php";
+			$barraSinistra ="view/commandi/barra sinistra.php";
+			$barraDestra ="view/commandi/barra destra.php";	
+			$_SESSION['pagina']='carrello';			
+   			include ("view/Master.php");
+		}	
+		
+		public function setInsertCarrello()
+		{
+			$logout = "view/login/logoutContent.php";
+			$content = "view/insertCarrello.php";
 			$barraSinistra ="view/commandi/barra sinistra.php";
 			$barraDestra ="view/commandi/barra destra.php";	
 			$_SESSION['pagina']='carrello';			
@@ -170,6 +181,24 @@
 		{
 			$logout = "view/login/logoutContent.php";
 			$content = "view/lista.php";
+			if ($_SESSION['username']=='utente')
+				{				
+					$barraSinistra ="view/utente/barra sinistra.php";
+					$barraDestra ="view/utente/barra destra.php";	
+				}
+			else if ($_SESSION['username']=='amm')
+				{				
+					$barraSinistra ="view/amm/barra sinistra.php";
+					$barraDestra ="view/amm/barra destra.php";	
+				}
+			$_SESSION['pagina']='ricercaSemplice';
+			include ("view/Master.php");
+		}
+
+		public function setAcquisto()
+		{
+			$logout = "view/login/logoutContent.php";
+			$content = "model/acquisto.php";
 			if ($_SESSION['username']=='utente')
 				{				
 					$barraSinistra ="view/utente/barra sinistra.php";

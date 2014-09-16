@@ -251,6 +251,7 @@ tr.alt-row, tr.alt-row td
 	float: left;
 	width: 19%;
 	padding-left: 1%;
+	margin-bottom:80px;
 
 }
 
@@ -259,6 +260,7 @@ tr.alt-row, tr.alt-row td
 	float: right;
 	width: 19%;
 	padding-right: 1%;	
+	margin-bottom:80px;
 }
 
 #content 
@@ -271,48 +273,6 @@ tr.alt-row, tr.alt-row td
 	background-color:white;
 }
 
-
-
-/* social bar */
-
-.social
-{
-	width: 100%;
-}
-
-.social ul
-{
-	display: block;
-	float: right;
-	margin-right: 10px;
-}
-
-.social ul li
-{
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	overflow: hidden;
-}
-
-    .social ul li a:link{
-	color: transparent;
-    }
-
-    #facebook{
-	background-image: url('../images/fb.png');
-	background-repeat: no-repeat;
-    }
-
-    #twitter{
-	background-image: url('../images/twitter.png');
-	background-repeat: no-repeat;
-    }
-
-    #linkedin{
-	background-image: url('../images/linkedin.png');
-	background-repeat: no-repeat;
-	}
 
 /* header */
 
@@ -348,6 +308,7 @@ select.menu
 #menu
 {
 	position: relative;
+	padding-left:20px;
 	float: right;
 	display: inline-block;
 }
@@ -364,7 +325,7 @@ select.menu
 	position: relative;
 	display: inline-block;
     color: white;
-	left:9em;
+	left:0em;
 	top:3em;
 }
 
