@@ -18,9 +18,6 @@
                     	<h1>Portale Del Libro</h1>
 						
 					</div>
-                    <select class="menu">
-                        <option></option>
-                    </select>
                    <div id="menu">
                         <ul>
                             <li><a href="index.php?page=login">Home</a></li>
@@ -30,10 +27,6 @@
                 </div>
             </header> 
             <!-- Inizio Pagina -->
-            <!--  barra Sinistra -->
-            <?php
-				require($barraSinistra);
-			?>
 			<!--  barra Destra -->
             <?php
 				require($barraDestra);

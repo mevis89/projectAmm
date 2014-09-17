@@ -1,6 +1,8 @@
 <html>
 <?php
-	echo 'Lista dei libri</br>';
+	//controllo libri
+	include('model/controlloLibri.php');
+	echo '<h2>Lista dei libri</h2></br>';
 	// richiamo il file di configurazione
 	require ('model/config.php');
 

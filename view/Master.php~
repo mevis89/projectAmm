@@ -15,7 +15,7 @@
                 <div id="header">
 				
 					<div id="intestazione">                   
-                    	<h1>Portale Del Libro</h1>
+                    	<h1>Portale Del Libro<li><?php require($username);?></li></h1>
 						
 					</div>
                     <select class="menu">
@@ -23,17 +23,13 @@
                     </select>
                    <div id="menu">
                         <ul>
-                            <li class="current_pagina_item"><a href="index.php?page=login">Home</a></li>
+                            <li><a href="index.php?page=login">Home</a></li>
                             <li><?php require($logout); ?></li>
                         </ul>
                     </div> 
                 </div>
             </header> 
             <!-- Inizio Pagina -->
-            <!--  barra Sinistra -->
-            <?php
-				require($barraSinistra);
-			?>
 			<!--  barra Destra -->
             <?php
 				require($barraDestra);

@@ -1,5 +1,15 @@
-<?php
-	echo 'Ricerca semplice</br>';
-	
-	include('model/lista.php');
-?>
+<div id="content">
+	<h2 class="icon-title" id="h-home">Home</h2>
+    <p>
+    	Lista Libri
+    </p>
+    <p>     
+		
+  		<p>
+   			<?php
+				include('model/lista.php');
+			?>
+  		</p>
+	</p>
+		
+</div>

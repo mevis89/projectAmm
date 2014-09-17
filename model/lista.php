@@ -2,7 +2,6 @@
 <?php
 	//controllo libri
 	include('model/controlloLibri.php');
-	echo 'Lista dei libri</br>';
 	// richiamo il file di configurazione
 	require ('model/config.php');
 

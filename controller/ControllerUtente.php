@@ -44,7 +44,7 @@
 					break;
 				case 'cercaAvanzata':
 					$vs->setCercaAvanzata();
-
+					break;
 				// Set Carrello
 				case 'carrello':
 					$vs->setCarrello();

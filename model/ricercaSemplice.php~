@@ -1,4 +1,6 @@
 <?php
+	//controllo libri
+	include('model/controlloLibri.php');
 	// richiamo il file di configurazione
 	require ('model/config.php');
 
