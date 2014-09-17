@@ -1,4 +1,12 @@
-<?php
+<div id="content">
+	<h2 class="icon-title" id="h-home">Home</h2>
+    <p>
+    	Lista Libri
+    </p>
+    <p>     
+		
+  		<p>
+	<?php
 	//ricerca avanzata
 	echo 'Ricerca semplice</br>';
 	
@@ -21,4 +29,7 @@
 		<?}
 	?>	
 	
-?>
+  		</p>
+	</p>
+		
+</div>

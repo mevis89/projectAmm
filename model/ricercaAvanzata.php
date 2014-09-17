@@ -12,25 +12,28 @@
 	$autore=$_REQUEST['autore'];
 
 	$genere=$_REQUEST['genere'];
-
-	// controllo l'esito
-
-	$query = "select * from libri where titolo='$titolo' and autore='$autore' and genere='$genere' ;";
+	
 
 	// preparo la query
-	
+	$query = "select * from libri where titolo='$titolo' and autore='$autore' and genere='$genere' ;";
 
 	// lancio la query
 	$result = mysql_query($query);
 
+	$num=mysql_numrows($result);
+
 	// controllo l'esito
-	if (!$result) {
-		die("Errore nella query $query: " . mysql_error());
+	if ((!$result) || ($num==0)) {
+		//die("Errore nella query $query: " . mysql_error());
 		mysql_close();
-		header("Location: index.php?page=amm&com=amm");
+		if ($_SESSION['username']=='utente')
+			header("Location: index.php?page=utente&com=cercaAvanzata");
+		else if ($_SESSION['username']=='amm')
+		header("Location: index.php?page=amm&com=cercaAvanzata");
+		
 	}
 	
-	$num=mysql_numrows($result);
+	//$num=mysql_numrows($result);
 	
 	// chiudo la connessione a MySQL
 	mysql_close();

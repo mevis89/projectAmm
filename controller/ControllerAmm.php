@@ -34,6 +34,9 @@
 				case 'cerca':
 					$vs->setCerca();
 					break;
+				case 'ricercaSemplice':
+					$vs->setRicercaSemplice();
+					break;
 				case 'ricercaAvanzata':
 					$vs->setRicercaAvanzata();
 					break;
@@ -48,6 +51,7 @@
 				// prova
 				case 'lista':
 					$vs->setLista();
+					break;
 				
 			}
 		}

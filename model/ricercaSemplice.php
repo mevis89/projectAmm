@@ -7,10 +7,10 @@
 	// richiamo lo script responsabile della connessione a MySQL
 	require ('model/connect.php');	
 
-	$autore=$_REQUEST['titolo'];
+	$titolo=$_REQUEST['titolo'];
 	
 	// preparo la query
-	$query = "select * from libri where titolo='$autore' ;";
+	$query = "select * from libri where titolo='$titolo' ;";
 
 	// lancio la query
 	$result = mysql_query($query);
