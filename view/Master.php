@@ -13,30 +13,29 @@
             <header>				
                 <!--  header -->
                 <div id="header">
-				
 					<div id="intestazione">                   
                     	<h1>Portale Del Libro</h1>
-						
 					</div>
                    <div id="menu">
-                        <ul>
+                     
                             <li><a href="index.php?page=login">Home</a></li>
                             <li><?php require($logout); ?></li>
-                        </ul>
+                        
                     </div> 
                 </div>
             </header> 
             <!-- Inizio Pagina -->
-			<!--  barra Destra -->
-            <?php
-				require($barraDestra);
-			?>
-            <!-- Content -->
-			<content>
-			<?php
-				require($content);
-			?>
-			</content>
+				<!--  barra Destra -->
+				    <?php
+						require($barraDestra);
+					?>
+		  
+			    <!-- Content -->
+					<content>
+					<?php
+						require($content);
+					?>
+					</content>
 
             <!--  footer -->
             <footer>

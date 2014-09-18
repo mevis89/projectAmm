@@ -1,13 +1,9 @@
 <HTML>
-	<head>
-	
-	</head>
 <div id="content">
-	<h2 class="icon-title" id="h-home">Home</h2>
+	<h2 class="icon-title" id="h-home">Carrello</h2>
     <p>
 
 		<!---- Piccolo Script in javascript per confermare l'acquisto ---->
-    	Il Tuo carrello
 
 		<?php
 			//controllo libri

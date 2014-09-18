@@ -3,9 +3,5 @@
     <p>
     	Benvenuto <?php echo $_SESSION["username"];?>
     </p>
-    <p>     
-		
-	</p>
-		
 </div>
 

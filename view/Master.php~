@@ -13,19 +13,14 @@
             <header>				
                 <!--  header -->
                 <div id="header">
-				
 					<div id="intestazione">                   
-                    	<h1>Portale Del Libro<li><?php require($username);?></li></h1>
-						
+                    	<h1>Portale Del Libro</h1>
 					</div>
-                    <select class="menu">
-                        <option></option>
-                    </select>
                    <div id="menu">
-                        <ul>
+                     
                             <li><a href="index.php?page=login">Home</a></li>
                             <li><?php require($logout); ?></li>
-                        </ul>
+                        
                     </div> 
                 </div>
             </header> 

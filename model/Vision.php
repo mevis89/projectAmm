@@ -33,7 +33,7 @@
 		{
 			$logout = "view/login/logoutContent.php";
 			$content = "view/commandi/carrello.php";
-			$barraDestra ="view/commandi/barra destra.php";	
+			$barraDestra ="view/utente/barra destra.php";	
 			$_SESSION['pagina']='carrello';			
    			include ("view/Master.php");
 		}	
@@ -42,7 +42,7 @@
 		{
 			$logout = "view/login/logoutContent.php";
 			$content = "view/insertCarrello.php";
-			$barraDestra ="view/commandi/barra destra.php";	
+			$barraDestra ="view/utente/barra destra.php";	
 			$_SESSION['pagina']='carrello';			
    			include ("view/Master.php");
 		}	
@@ -142,7 +142,7 @@
 		public function setInserisci()
 		{
 			// prova database;
-			$logout = "view/altri/noContent.php";
+			$logout = "view/login/logoutContent.php";
 			$content = "view/commandi/inserisci.php";
 			$barraDestra ="view/amm/barra destra.php";	
 			$_SESSION['pagina']='inserisci';

@@ -22,7 +22,7 @@ body
     color: white;
 }
 
-#menu ul li a:link
+#menu li a:link
 {
     color: white;
 }
@@ -41,7 +41,7 @@ h2, h3, h4, h5, h6
     padding-bottom: 5px;
 }
 
-/** vista dei link **/
+/** visitazione dei link **/
 a:link
 {
     text-decoration: underline;
@@ -95,133 +95,16 @@ label
     width: 30%;
 }
 
-.input-form
-{
-    line-height: 3em;
-    border-bottom: 1px solid #ADFF2F;
-}
-
-
-.input-form input[type=text], .input-form input[type=password]
-{
-    display: inline-block;
-    width:59%;
-}
-
-.input-form select
-{
-    display: inline-block;
-    width:59%;
-    border: 1px solid #ADFF2F;
-    background-color: #ffffff;
-}
-
-.input-form input[type=submit], .input-form button
-{
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding-left: 10px;
-    padding-right: 10px;
-
-}
-.btn-group input[type=submit], .btn-group button
-{
-    display: inline-block;
-}
-.btn-group
-{
-    text-align: center;
-}
-
-/* stile delle tabelle */
-
-table 
-{
-    border: 1px solid #1c345a;
-    border-collapse: collapse;
-    margin-top:10px;
-    line-height: 1.2em;
-    width: 100%;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-
-th, td 
-{
-    border: 1px solid #1c345a;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-th
-{
-    background-color: #1c345a;
-    color: white;
-    font-weight: bold;
-}
-
-
-
-tr, td
-{
-    background-color: #e8ebee;
-}
-
-tr.alt-row, tr.alt-row td
-{
-    background-color: #bbc2ce;
-}
 
 /* decorazioni degli elementi */
 
-
-#sidebar2 ol  
+#sidebar 
 {
     padding-left: 20px;
 }
 
 
 
-#sidebar2 ul
-{
-    padding-left: 10px;
-    margin-top: 0px;
-    margin-left: 0px;
-}
-
-.panel, .panel-mini
-{
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.panel li a:link, .panel-mini li a:link
-{
-    text-decoration:  none;
-    color: #9e1616;
-}
-
-
-.none
-{
-    list-style: none;
-}
-.no-space
-{
-    padding: 0px;
-    margin: 0px;
-}
-
-.clear
-{
-    clear: both; 
-    width: 0px; 
-    height: 0px;
-}
 
 #pagina
 {
@@ -232,7 +115,7 @@ tr.alt-row, tr.alt-row td
 	margin-bottom:25px;
 }
 
-#sidebar2 
+#sidebar
 {
 	float: right;
 	width: 19%;
@@ -290,14 +173,14 @@ select.menu
 	display: inline-block;
 }
 
-#menu ul
+#menu
 {
 	position: relative;
 	display: inline-block;
 	list-style: none;
 }
 
-#menu ul li
+#menu li
 {
 	position: relative;
 	display: inline-block;
@@ -316,26 +199,4 @@ select.menu
 	position:absolute;
 }
 
-.panel li
-{
-	display: block;
-	width: 400px;
-	height: 130px;
-	margin:auto;
-	margin-top: 15px;
-	border: 1px solid #1c345a;
-	position: relative;
-}
-
-.panel li a
-{
-	display: block;
-	position: absolute;
-	/* per allineare il testo a meta' di un block il trucco e' usare
-	 una line-height della stessa altezza del blocco */
-	line-height: 130px;
-	vertical-align: middle;
-	padding-left: 150px;
-	font-size: 1.2em;
-}
 }
