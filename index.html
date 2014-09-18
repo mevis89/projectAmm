@@ -1,0 +1,28 @@
+Progetto Amministrazione </br>
+Daniele Rocco mat 48314 </br>
+
+Oggetto:un progetto molto semplice,ci sono due tipi di utente:</br>
+			1.Utente</br>
+			2.Amministratore</br>
+		1.L'utente può semlicemente fare le sue ricerche dei libri e se interessato caricare i libri sul carrello ed acquistarli</br>
+		2.L'amministratore oltre che fare le ricerche può anche caricare i vari libri all'interno del DB.</br>
+		Entrambi possono fare il login e il logout.</br>
+</br>
+Caratteristiche:Il sito e' abbastanza semplice,dovuto al poco tempo dedicatogli (troppe cose a carico oltre a questo) il login viene effettuato dal controller che,una volta accertato dell'idendità va a smistarlo nei due controller utente.</br>
+l'MVC gestisce il tutto,utilizzo come base  sempre lo stesso file master in cui carico le varie parti che mi servono per addempiere le richieste dell'utente/amministratore.</br>
+L'accesso al database viene gestito dal modello in cui vengono gestiti anche i caricamenti dei file dal view,il database e' costituito da due tabelle in cui:la tabella libri contiene i vari libri caricati dall'amministratore,mentre la seconda tabella e' dedicata al carrello gestito dall'utente con i vari caricamenti e acquisti.</br>
+Una volta acquistato un libro o cmq caricato nella tebella carrello viene detrata dal numero di copie della tabella libri e poi cancellata dalla tabella carrello.</br>
+
+Ho fatto pochi controlli quindi nella ricerca avanzata se si danno dati sbagliati esce un problema con la query,e altri diversi.
+
+
+Elenco di quali requisiti del progetto avete soddisfatto. Vi ricordo che i requisiti sono i seguenti:</br>
+Utilizzo di HTML e CSS</br>
+Utilizzo di PHP e MySQL</br>
+Utilizzo del pattern MVC</br>
+Almeno due ruoli (indicare quali sono)</br>
+
+Ho provato a fare una transizione ma non ci sono riuscito.
+Mentre per ajax utilizzato un piccolo script in javascript per restituire un messaggio una volta effettuato l'acquisto.</br>
+che non conta come punto.
+L'index parte a questo indirizzo:<a href="http://spano.sc.unica.it/amm2014/roccoDaniele/index.php?page=login">sito</a>io le passo questo poichè utilizzavo questo.
