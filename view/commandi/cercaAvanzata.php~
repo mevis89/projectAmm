@@ -1,71 +1,23 @@
-<!-- inizio script -->
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			//al click sul bottone del form
-			$("#bottone").click(function(){
-				//associo variabili
-    			var titolo = $("#titolo").val();
-				var autore = $("#autore").val();
-				var genere = $("#genere").val();
-
-  			//chiamata ajax
-   			 $.ajax({
-     				type: "POST",
-      				url: "index.php?page=utente&com=ricercaAvanzata&titolo&autore&genere",
-      				data: "titolo=" + titolo + "&autore=" + autore + "&genere=" + genere,
-      				dataType: "html",
-      			success: function(msg)
-      			{
-        			$("#risultato").html(msg);
-      			},
-      			error: function()
-      			{
-        			alert("problema");
-      			}
-    		});
-  		});
-	});
-</script>
-<!-- fine script -->
 <div id="content">
-	<h2 class="icon-title" id="h-home">Home</h2>
+	<h2 class="icon-title" id="h-home">Ricerca Avanzata</h2>
     <p>
     	Ricerca Avanzata
     </p>
     <p>     
 		
-		
-	
-	<form name="modulo">
-	<p>
+		<form method="POST" action="index.php?page=<?php echo $_SESSION['username'];?>&com=ricercaAvanzata&titolo&autore&genere" >
+  		<p>
    			<li><label>Inserisci Titolo</label>
-   			<input id="titolo" name="titolo" type="text" /></li>
+   			<input id="cerca" name="titolo" type="text" required="required" /></li>
 			</br>
 			<li><label>Inserisci Autore</label>
-   			<input id="autore" name="autore" type="text" /></li>
+   			<input id="cerca" name="autore" type="text" required="required" /></li>
 			</br>
 			<li><label>Inserisci Genere</label>
-   			<input id="genere" name="genere" type="text" /></li>
+   			<input id="cerca" name="genere" type="text" required="required" /></li>
 			</br>
-			<input type="button" id="bottone" value="Invia i dati" action="index.php?page=<?php echo $_SESSION['username'];?>&com=ricercaAvanzata&titolo&autore&genere">
-	</p>
-	<div id="risultato"></div>
-	</form>
-
-  		</p>
-<!--- 			<form method="POST"  >
-  			<<li><p>titolo</p>
-    <li><p><input type="text" name="titolo" id="titolo">
-    <li><p>autore</p>
-    <li><p><input type="text" name="autore" id="autore">
-	<li><p>genere</p>
-    <li><p><input type="text" name="genere" id="genere">
-    <li><p><input type="button" id="bottone" value="Invia i dati">
-	
-
 			
-			<input type="Submit" action="">-->
+			<input type="Submit" action="">
 
   		</p>
 	</p>
