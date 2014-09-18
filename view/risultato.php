@@ -1,6 +1,6 @@
 
 <div id="content">
-	<h2 class="icon-title" id="h-home">Home</h2>
+	<h2 class="icon-title" id="h-home">Ricerca Semplice</h2>
     <p>
     	Libro
     </p>

@@ -1,5 +1,5 @@
 <div id="content">
-	<h2 class="icon-title" id="h-home">Home</h2>
+	<h2 class="icon-title" id="h-home">Ricerca Avanzata</h2>
     <p>
     	Lista Libri
     </p>
